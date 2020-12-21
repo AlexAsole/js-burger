@@ -1,0 +1,40 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+.between{
+  justify-content: space-between;
+}
+.center{
+  align-items: center;
+}
+.pl-50{
+  padding-left: 50px;
+}
+.pr-50{
+  padding-right: 50px;
+}
+.wrapper{
+  width: 1200px;
+  margin: 0 auto;
+}
+header{
+  height: 140px;
+  background: #fdbb40;
+}
+.name-burger{
+  border: none;
+}
+.choose{
+  width: 50%;
+}
+footer{
+  height: 100px;
+  background: #d33359;
+  color: #fff;
+}

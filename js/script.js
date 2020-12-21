@@ -9,12 +9,12 @@ var counterIngredients = 0;
 var checkedIngredients = [];
 var flag
 
-finalPrice.innerText = basePrice;
+finalPrice.innerText = '$ ' + basePrice
 
 btn.addEventListener('click', function(){ // fase 1: se non scrivo un nome per il panino non vado avanti
-  if (nomeBurger.value === ''){
+  if (nomeBurger.value.length === 0){
+    finalPrice.innerText = '$ ' + basePrice;
     alert('Inserisci il nome, per favore!')
-    finalPrice.innerText = basePrice;
   } else { //fase 2: se non seleziono almeno 2 checkbox si blocca
     for (var i = 0; i < checkIngredients.length; i++) {
       if (checkIngredients[i].checked) {
@@ -24,7 +24,7 @@ btn.addEventListener('click', function(){ // fase 1: se non scrivo un nome per i
     }
     if (counterIngredients < 2) {
       alert('Seleziona almeno 2 ingredienti!')
-      finalPrice.innerText = basePrice;
+      finalPrice.innerText = '$ ' + basePrice;
     } else { //fase 3: calcolo il prezzo base
       for (x = 0; x < checkedIngredients.length; x++){
         basePrice += parseInt(checkedIngredients[x])
@@ -37,7 +37,7 @@ btn.addEventListener('click', function(){ // fase 1: se non scrivo un nome per i
       if(flag) {
         basePrice = basePrice - (basePrice * 0.2);
       }
-      finalPrice.innerText = basePrice;
+      finalPrice.innerText = '$ ' + basePrice;
     }
   }
   //fase 5: resetto le var alla base

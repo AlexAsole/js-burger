@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Burger Shop</title>
-  </head>
-  <body>
-    <header>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Burger Shop</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="flex center between pl-50">
 
       <h1>CREATE YOUR BURGER</h1>
     </header>
-    <main>
+    <main class="pl-50">
 
-    <input class="name-burger" type="text" name="name-burger" value="" placeholder="Name Your Burger">
-    <h2>Ingredients</h2>
-    <div class="container">
-      <label for="Cheese">Cheese</label><input type="checkbox" name="Cheese" value="20"><label for="Cheese">Add</label><br>
-      <label for="Egg">Egg</label><input type="checkbox" name="Egg" value="30"><label for="Egg">Add</label><br>
-      <label for="Mustard">Mustard</label><input type="checkbox" name="Mustard" value="40"><label for="Mustard">Add</label><br>
-      <label for="Tomato">Tomato</label><input type="checkbox" name="Tomato" value="50"><label for="Tomato">Add</label><br>
-      <label for="Lettuce">Lettuce</label><input type="checkbox" name="Lettuce" value="60"><label for="Lettuce">Add</label><br>
-      <label for="Ketchup">Ketchup</label><input type="checkbox" name="Ketchup" value="70"><label for="Ketchup">Add</label><br>
-    </div>
+      <input class="name-burger" type="text" name="name-burger" value="" placeholder="Name Your Burger">
+      <h2>Ingredients</h2>
+      <div class="container flex">
+        <div class="choose"><label for="Cheese">Cheese</label><input type="checkbox" name="Cheese" value="20"><label for="Cheese">Add</label></div>
+        <div class="choose"><label for="Tomato">Tomato</label><input type="checkbox" name="Tomato" value="50"><label for="Tomato">Add</label></div>
+        <div class="choose"><label for="Egg">Egg</label><input type="checkbox" name="Egg" value="30"><label for="Egg">Add</label></div>
+        <div class="choose"><label for="Lettuce">Lettuce</label><input type="checkbox" name="Lettuce" value="60"><label for="Lettuce">Add</label></div>
+        <div class="choose"><label for="Mustard">Mustard</label><input type="checkbox" name="Mustard" value="40"><label for="Mustard">Add</label></div>
+        <div class="choose"><label for="Ketchup">Ketchup</label><input type="checkbox" name="Ketchup" value="70"><label for="Ketchup">Add</label></div>
+      </div>
 
 
-    <label for="discount">Discount Coupon</label><input class="discount" type="text" name="discount" value=""><br>
-    <button type="button" name="button">Calculate</button>
-  </main>
-  <footer>
-    <div class="price"></div>
-  </footer>
+      <label for="discount">Discount Coupon</label><input class="discount" type="text" name="discount" value=""><br>
+      <button type="button" name="button">Calculate</button>
+    </main>
+    <footer class="flex between center pl-50 pr-50">
+      <div class="price-title">Your Price</div>
+      <div class="price"></div>
+    </footer>
+  </div>
 
 
   <script src="js/script.js" charset="utf-8"></script>
-  </body>
+</body>
 </html>
