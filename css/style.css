@@ -38,7 +38,7 @@ body{
 .wrapper{
   width: 50vw;
   height: 100vh;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 header{
   height: 140px;
@@ -49,8 +49,11 @@ main{
   background: #fff;
   height: calc(100% - 240px);
 }
-.container{
-  position: relative;
+/* .container{
+  width: 50%;
+} */
+.check-container{
+  display: inline-block;
 }
 .choose{
   width: 50%;
@@ -78,19 +81,33 @@ header img{
   height: 30px;
   vertical-align: middle;
 }
-.choose input{
+.choose input[type=checkbox]:checked{
   visibility: hidden;
 }
-.choose span::after{
-  content: "";
-  position: absolute;
-  right: 70px;
+.choose span::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #d33359;
+    display: inline-block;
+    transform: translateX(-52px);
+}
+.choose input[type=checkbox]:checked + span::before{
   width: 16px;
   height: 16px;
-  background-color: #d33359;
+  display: inline-block;
+  position: absolute;
+  transform: translate(-22px,-5px);
+  z-index: 1;
+  font-family: FontAwesome;
+  content: "\f00c";
+  font-size: 25px;
+  font-weight: 900;
+  color: black;
 }
 .discount{
-  width: calc(100% - 193px);
+  width: calc(100% - 190px);
   border: 0;
   background: #fff5e2;
 }

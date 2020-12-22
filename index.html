@@ -21,21 +21,64 @@
     <main>
       <div class="pl-50">
 
-      <input class="name-burger pt-20 pb-20" type="text" name="name-burger" value="" placeholder="Name Your Burger">
-      <h2>Ingredients</h2>
-      <!-- list of Ingredients -->
-      <div class="container flex wrap pb-20">
-        <label class="choose pt-20 pb-20" for="cheese"><img src="img/cheese.svg" alt=""> Cheese <input type="checkbox" id="cheese" name="Cheese" value="2"><span> Add</span></label>
-        <label class="choose pt-20 pb-20" for="tomato"><img src="img/tomato.svg" alt=""> Tomato <input type="checkbox" id="tomato" name="Tomato" value="1.5"><span> Add</span></label>
-        <label class="choose pt-20 pb-20" for="egg"><img src="img/fried-egg.svg" alt=""> Egg <input type="checkbox" id="egg" name="Egg" value="2.5"><span> Add</span></label>
-        <label class="choose pt-20 pb-20" for="lettuce"><img src="img/lettuce.svg" alt=""> Lettuce <input type="checkbox" id="lettuce" name="Lettuce" value="0.6"><span> Add</span></label>
-        <label class="choose pt-20 pb-20" for="mustard"><img src="img/mustard.svg" alt=""> Mustard <input type="checkbox" id="mustard" name="Mustard" value="1.2"><span> Add</span></label>
-        <label class="choose pt-20 pb-20" for="ketchup"><img src="img/ketchup.svg" alt=""> Ketchup <input type="checkbox" id="ketchup" name="Ketchup" value="1"><span> Add</span></label>
-      </div>
-      <!-- end of list of Ingredients -->
+        <input class="name-burger pt-20 pb-20" type="text" name="name-burger" value="" placeholder="Name Your Burger">
+        <h2>Ingredients</h2>
+        <!-- list of Ingredients -->
+        <div class="container flex wrap pb-20">
+          <div class="choose pt-20 pb-20">
+            <img src="img/cheese.svg" alt="">
+            <label for="cheese">Cheese</label>
+            <div class="check-container">
+              <input type="checkbox" id="cheese" name="Cheese" value="2">
+              <span> Add</span>
+            </div>
+          </div>
+          <div class="choose pt-20 pb-20">
+            <img src="img/tomato.svg" alt="">
+            <label for="tomato">Tomato</label>
+            <div class="check-container">
+              <input type="checkbox" id="tomato" name="tomato" value="1.5">
+              <span> Add</span>
+            </div>
+          </div>
+          <div class="choose pt-20 pb-20">
+            <img src="img/fried-egg.svg" alt="">
+            <label for="egg">Egg</label>
+            <div class="check-container">
+              <input type="checkbox" id="egg" name="egg" value="2.5">
+              <span> Add</span>
+            </div>
+          </div>
+          <div class="choose pt-20 pb-20">
+            <img src="img/lettuce.svg" alt="">
+            <label for="lettuce">Lettuce</label>
+            <div class="check-container">
+              <input type="checkbox" id="lettuce" name="lettuce" value="0.6">
+              <span> Add</span>
+            </div>
+          </div>
+          <div class="choose pt-20 pb-20">
+            <img src="img/mustard.svg" alt="">
+            <label for="mustard">Mustard</label>
+            <div class="check-container">
+              <input type="checkbox" id="mustard" name="mustard" value="1.2">
+              <span> Add</span>
+            </div>
+          </div>
+          <div class="choose pt-20 pb-20">
+            <img src="img/ketchup.svg" alt="">
+            <label for="ketchup">Ketchup</label>
+            <div class="check-container">
+              <input type="checkbox" id="ketchup" name="ketchup" value="1">
+              <span> Add</span>
+            </div>
+          </div>
 
-      <div class="container pb-20"><label for="discount">Discount Coupon  </label><input class="discount" type="text" placeholder="Insert discount coupon here" name="discount" value=""></div>
-    </div>
+        </div>
+        <!-- end of list of Ingredients -->
+
+        <div class="container pb-20"><label for="discount">Discount Coupon  </label><input class="discount" type="text" placeholder="Insert discount coupon here" name="discount" value=""></div>
+      </div>
       <div class="btn-con"><button type="button" name="button">Calculate</button></div>
     </main>
     <!-- end main -->

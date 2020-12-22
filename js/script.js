@@ -14,7 +14,7 @@ finalPrice.innerText = '$ ' + addPrice;
 
 btn.addEventListener('click', function(){ // fase 1: se non scrivo un nome per il panino non vado avanti
   if (nomeBurger.value.length === 0){
-    alert('Inserisci il nome, per favore!')
+    alert('Please, insert a name for your Hamburger!')
     finalPrice.innerText = '$ ' + addPrice;
   } else { //fase 2: se non seleziono almeno 2 checkbox si blocca*
     for (var i = 0; i < checkIngredients.length; i++) {
@@ -24,7 +24,7 @@ btn.addEventListener('click', function(){ // fase 1: se non scrivo un nome per i
       }
     }
     if (counterIngredients < minIng) { //*se non hai selezionato 2 check, si blocca
-      alert('Seleziona almeno 2 ingredienti!')
+      alert('Select almost ' + minIng + ' ingredients!')
       finalPrice.innerText = '$ ' + addPrice;
     } else {
       if(discount.indexOf(inputDiscount.value) !== -1){ //fase 5: controllo sconto
