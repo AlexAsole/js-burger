@@ -27,7 +27,7 @@ btn.addEventListener('click', function(){ // fase 1: se non scrivo un nome per i
       alert('Seleziona almeno 2 ingredienti!')
       finalPrice.innerText = '$ ' + addPrice;
     } else {
-      if(discount.indexOf(inputDiscount.value) !== -1){
+      if(discount.indexOf(inputDiscount.value) !== -1){ //fase 5: controllo sconto
         addPrice -= addPrice*disValue;
       }
     }

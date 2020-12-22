@@ -1,10 +1,15 @@
+/* UTILITY */
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Montserrat;
+  font-weight: 600;
 }
 .flex{
   display: flex;
+}
+.wrap{
   flex-wrap: wrap;
 }
 .between{
@@ -19,16 +24,24 @@
 .pr-50{
   padding-right: 50px;
 }
+
+/* CONTENITORI */
+body{
+  background: #fff5e2;
+}
 .wrapper{
-  width: 50%;
-  margin: 0 auto;
+  width: 50vw;
+  height: 100vh;
+  /* margin: 0 auto; */
 }
 header{
   height: 140px;
   background: #fdbb40;
+  position: relative;
 }
-.name-burger{
-  border: none;
+main{
+  background: #fff;
+  height: calc(100% - 240px);
 }
 .choose{
   width: 50%;
@@ -38,3 +51,17 @@ footer{
   background: #d33359;
   color: #fff;
 }
+
+
+/* ELEMENTI */
+/* ELEMENTI HEADER */
+header img{
+  height: 200px;
+  position: absolute;
+  right: -30px;
+}
+/* ELEMENTI MAIN */
+.name-burger{
+  border: none;
+}
+/* ELEMENTI FOOTER */
