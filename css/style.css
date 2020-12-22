@@ -49,6 +49,9 @@ main{
   background: #fff;
   height: calc(100% - 240px);
 }
+.container{
+  position: relative;
+}
 .choose{
   width: 50%;
 }
@@ -74,6 +77,17 @@ header img{
 .container img{
   height: 30px;
   vertical-align: middle;
+}
+.choose input{
+  visibility: hidden;
+}
+.choose span::after{
+  content: "";
+  position: absolute;
+  right: 70px;
+  width: 16px;
+  height: 16px;
+  background-color: #d33359;
 }
 .discount{
   width: calc(100% - 193px);
