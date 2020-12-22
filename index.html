@@ -8,34 +8,44 @@
   <title>Burger Shop</title>
 </head>
 <body>
+  <!-- wrapper -->
   <div class="wrapper">
+    <!-- header -->
     <header class="flex center between pl-50">
-
       <h1>Create Your Burger</h1>
       <img src="img/burger-top.png" alt="">
     </header>
-    <main class="pl-50">
+    <!-- end header -->
+    <!-- main -->
+    <main>
+      <div class="pl-50">
 
-      <input class="name-burger" type="text" name="name-burger" value="" placeholder="Name Your Burger">
+      <input class="name-burger pt-20 pb-20" type="text" name="name-burger" value="" placeholder="Name Your Burger">
       <h2>Ingredients</h2>
-      <div class="container flex wrap">
-        <div class="choose"><label for="cheese">Cheese</label><input type="checkbox" id="cheese" name="Cheese" value="20"><label for="cheese">Add</label></div>
-        <div class="choose"><label for="tomato">Tomato</label><input type="checkbox" id="tomato" name="Tomato" value="50"><label for="tomato">Add</label></div>
-        <div class="choose"><label for="egg">Egg</label><input type="checkbox" id="egg" name="Egg" value="30"><label for="egg">Add</label></div>
-        <div class="choose"><label for="lettuce">Lettuce</label><input type="checkbox" id="lettuce" name="Lettuce" value="60"><label for="lettuce">Add</label></div>
-        <div class="choose"><label for="mustard">Mustard</label><input type="checkbox" id="mustard" name="Mustard" value="40"><label for="mustard">Add</label></div>
-        <div class="choose"><label for="ketchup">Ketchup</label><input type="checkbox" id="ketchup" name="Ketchup" value="70"><label for="ketchup">Add</label></div>
+      <!-- list of Ingredients -->
+      <div class="container flex wrap pb-20">
+        <div class="choose pb-20"><label for="cheese"><img src="img/cheese.svg" alt=""> Cheese </label><input type="checkbox" id="cheese" name="Cheese" value="2"><label for="cheese"> Add</label></div>
+        <div class="choose"><label for="tomato"><img src="img/tomato.svg" alt=""> Tomato </label><input type="checkbox" id="tomato" name="Tomato" value="1.5"><label for="tomato"> Add</label></div>
+        <div class="choose pb-20"><label for="egg"><img src="img/fried-egg.svg" alt=""> Egg </label><input type="checkbox" id="egg" name="Egg" value="2.5"><label for="egg"> Add</label></div>
+        <div class="choose"><label for="lettuce"><img src="img/lettuce.svg" alt=""> Lettuce </label><input type="checkbox" id="lettuce" name="Lettuce" value="0.6"><label for="lettuce"> Add</label></div>
+        <div class="choose pb-20"><label for="mustard"><img src="img/mustard.svg" alt=""> Mustard </label><input type="checkbox" id="mustard" name="Mustard" value="1.2"><label for="mustard"> Add</label></div>
+        <div class="choose"><label for="ketchup"><img src="img/ketchup.svg" alt=""> Ketchup </label><input type="checkbox" id="ketchup" name="Ketchup" value="1"><label for="ketchup"> Add</label></div>
       </div>
+      <!-- end of list of Ingredients -->
 
-
-      <label for="discount">Discount Coupon</label><input class="discount" type="text" name="discount" value=""><br>
-      <button type="button" name="button">Calculate</button>
+      <div class="container pb-20"><label for="discount">Discount Coupon  </label><input class="discount" type="text" placeholder="Insert discount coupon here" name="discount" value=""></div>
+    </div>
+      <div class="btn-con"><button type="button" name="button">Calculate</button></div>
     </main>
+    <!-- end main -->
+    <!-- footer -->
     <footer class="flex between center pl-50 pr-50">
       <div class="price-title">Your Price</div>
       <div class="price"></div>
     </footer>
+    <!-- end footer -->
   </div>
+  <!-- end wrapper -->
 
 
   <script src="js/script.js" charset="utf-8"></script>

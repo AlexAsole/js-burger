@@ -1,5 +1,5 @@
 var discount = ['Mickey', 'Donald', 'Goofy'];
-var basePrice = 50;
+var basePrice = 4;
 var minIng = 2;
 var disValue = 0.2;
 var nomeBurger = document.getElementsByClassName('name-burger')[0];

@@ -24,6 +24,12 @@
 .pr-50{
   padding-right: 50px;
 }
+.pt-20{
+  padding-top: 20px;
+}
+.pb-20{
+  padding-bottom: 20px;
+}
 
 /* CONTENITORI */
 body{
@@ -63,5 +69,25 @@ header img{
 /* ELEMENTI MAIN */
 .name-burger{
   border: none;
+  font-size: 22px;
 }
-/* ELEMENTI FOOTER */
+.container img{
+  height: 30px;
+  vertical-align: middle;
+}
+.discount{
+  width: calc(100% - 193px);
+  border: 0;
+  background: #fff5e2;
+}
+.btn-con{
+  text-align: center;
+}
+button{
+  background-color: #fdbb40;
+  width: 120px;
+  height: 50px;
+  border: 0;
+  border-radius:10px;
+  padding-left: -50px;
+}
